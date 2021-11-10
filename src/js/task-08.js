@@ -14,9 +14,14 @@ function onSubmit(event) {
     if (email.value === "" || password.value === "") {
         return alert("Все поля должны быть заполнены!");
     }
+    const user = {
+        email: email.value,
+        password: password.value
+    }
 
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
-    event.currentTarget.reset();
+    console.log(user);
+    // console.log(`Email: ${email.value}, Password: ${password.value}`);
+    // event.currentTarget.reset();
 
 };
 
